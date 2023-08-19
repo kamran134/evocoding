@@ -1,0 +1,216 @@
+<section class="home__section">
+    <div class="home__content">
+        <h2 class="home__title">
+            EVO
+            <br>
+            Coding Center
+        </h2>
+        <p class="home__text"></p>
+    </div>
+    <div class="mouse__down">
+        <span></span>
+    </div>
+</section>
+<section class="contact__section">
+    <div class="contact__title">
+        <h2>İndi Başla</h2>
+    </div>
+    <div class="contact__content">
+        <div class="contact__row">
+            <form id="education__form">
+                <input placeholder="Ad" class="form__input" type="text" id="fname" autocomplete="off" required>
+                <input placeholder="Soyad" class="form__input" type="text" id="fsurname" autocomplete="off" required>
+                <zdiv class="form__element form__input">
+                    <span>(+994)</span>
+                    <input id="fnumber" maxlength="9"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        style="background-color: transparent;" placeholder="XX-XXX-XX-XX" type="number"
+                        autocomplete="off" required>
+                </zdiv>
+                <input id="femail" placeholder="Email" class="form__input" type="email" autocomplete="off" required>
+                <select id="ffield" class="form__input">
+                    <option value="none">Maraqlandığınız Sahə</option>
+                </select>
+                <button type="button" id="fconfirmbtn" class="form__button">Müraciət et</button>
+            </form>
+            <div class="contact__about">
+                <div class="contact__about__item">
+                    <span class="contact__about__text">evolearningcenter@gmail.com</span>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact__about__item">
+                    <span class="contact__about__text">+994 50 773 34 52</span>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact__about__item">
+                    <span class="contact__about__text">AF MALL 3-cü Mərtəbə</span>
+                    <i class="fa-solid fa-location-pin"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="about__section">
+    <div class="about__left">
+        <div class="about__left__texts">
+            <div class="about__title">
+                Biz kimik ?
+            </div>
+            <div id="about-text" class="about__description">
+                Artıq 4 ildir fəaliyyət göstərən EVO Coding Center çoxlu sayda proqramçı və dizayner
+                yetişdirmişdir.
+            </div>
+        </div>
+    </div>
+    <div class="about__right">
+        <div class="about__content">
+            <div class="about__right__image">
+                <img id="about-image" src="./src/images/ilqar.jpeg">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="education__section">
+    <button class="education__button">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="education__button">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="education__title">
+        Kurslarımız
+    </div>
+    <div class="education__content">
+        <div class="education__carousel">
+            <div class="education__cards">
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color1)" class="education__card">
+                        <div class="education__image">
+                            <i class="icofont-computer"></i>
+                        </div>
+                        <h3 class="education__card__title">
+                            IT və Helpdesk
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color2)" class="education__card education__card--2">
+                        <div class="education__image">
+                            <i class="icofont-dashboard-web"></i>
+                        </div>
+                        <h3 class="education__card__title">
+                            Veb
+                            <br>
+                            Proqramlaşdırma
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color3)" class="education__card education__card--3">
+                        <div class="education__image">
+                            <i class="icofont-smart-phone"></i>
+                        </div>
+                        <h3 class="education__card__title">
+                            Mobil
+                            <br>
+                            Proqramlaşdırma
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color4)" class="education__card education__card--4">
+                        <div class="education__image">
+                            <i class="icofont-console"></i>
+                        </div>
+                        <h3 class="education__card__title">
+                            Kiber <br> Təhlükəsizlik
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color5)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <i class="icofont-game"></i>
+                        </div>
+                        <h3 class="education__card__title">
+                            Oyun <br> Proqramlaşdırma
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color6)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/3d.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            3D <br> Modelləşdirmə
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color7)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/exterior.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            Exteryer <br> Dizayn
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color8)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/graphic.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            Qrafik <br> Dizayn
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color9)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/interior.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            Interyer <br> Dizayn
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color10)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/motion.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            Motion <br> Dizayn
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color11)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/qa.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            QA Testi
+                        </h3>
+                    </div>
+                </div>
+                <div class="education__slide">
+                    <div style="--card-color:var(--card-color12)" class="education__card education__card--5">
+                        <div class="education__image">
+                            <img src="./src/icons/courses/ux.svg">
+                        </div>
+                        <h3 class="education__card__title">
+                            UI UX
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<canvas class="batmancanvas"></canvas>
+<canvas class="circlecanvas"></canvas>

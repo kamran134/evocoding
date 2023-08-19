@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/{{filename}}.css">
+    <link rel="shortcut icon" type="image/jpg" href="./src/images/logo.png" />
+    <title>{{title}}</title>
+</head>
+
+<body class="preload">
+    {{> header}}
+    <main>
+        {{{body}}}
+        <div class="background">
+            <img src="./src/images/binary.png">
+            <img src="./src/images/source.png">
+            <img src="./src/images/console.png">
+            <img src="./src/images/blueprint.png">
+        </div>
+    </main>
+    {{> footer}}
+    <div class="whatsapp">
+        <a href="https://wa.me/994507733452">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <script type="module" src="./src/javascript/main.js"></script>
+    <script type="module" src="./src/javascript/pages/{{filename}}.js"></script>
+</body>
+
+</html>

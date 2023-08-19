@@ -1,0 +1,84 @@
+<section class="vacancy__section">
+    <h2 class="vacancy__title">Bizə Qatıl</h2>
+    <form class="vacancy__form custom__form">
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label">
+                    Ad
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label">
+                    Soyad
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label">
+                    Email
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label">
+                    Doğum Tarixi
+                </label>
+                <input type="date" class="form__input vacancy__input" required>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label">
+                    Mobil
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label">
+                    Müraciət Etdiyiniz Sahə
+                </label>
+                <select id="vacancy-list" class="form__input vacancy__input vacancy__select">
+                </select>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label">
+                    Linkedln
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+            <div class="form__field">
+                <label class="form__label">
+                    Github
+                </label>
+                <input type="text" class="form__input vacancy__input" required>
+            </div>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label">
+                    CV
+                </label>
+                <label for="ffile" class="form__input vacancy__input file__input">
+                    Fayl yüklə
+                    <i class="fa-solid fa-file"></i>
+                </label>
+                <input id="ffile" type="file" class="form__input vacancy__input" required hidden>
+            </div>
+            <div class="form__field">
+                <label class="form__label">
+                    İş Rejimi
+                </label>
+                <select class="form__input vacancy__input vacancy__select">
+                    <option>Part Time</option>
+                    <option>Full Time</option>
+                </select>
+            </div>
+        </div>
+        <button class="vacancy__button" type="submit">Göndər</button>
+    </form>
+</section>

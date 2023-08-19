@@ -1,0 +1,35 @@
+<section class="contact">
+    <div class="contact__title">
+        <h2>İndi Başla</h2>
+    </div>
+    <div class="contact__section">
+        <div class="contact__content">
+            <div class="contact__row">
+            <form id="education__form">
+                <input placeholder="Ad" class="form__input" type="text" id="fname" autocomplete="off" required>
+                <input placeholder="Soyad" class="form__input" type="text" id="fsurname" autocomplete="off" required>
+                <zdiv class="form__element form__input">
+                    <span>(+994)</span>
+                    <input id="fnumber" maxlength="9"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        style="background-color: transparent;" placeholder="XX-XXX-XX-XX" type="number"
+                        autocomplete="off" required>
+                </zdiv>
+                <input id="femail" placeholder="Email" class="form__input" type="email" autocomplete="off" required>
+                <select id="ffield" class="form__input">
+                    <option value="none">Maraqlandığınız Sahə</option>
+                </select>
+                <button type="button" id="fconfirmbtn" class="form__button">Müraciət et</button>
+            </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="map">
+    <h2 class="map__title">Bizi Axtarırsan ?</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4588902505166!2d49.839466316008135!3d40.37652106600673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da5a4c85e9f%3A0x8b209a8e1ed5eea9!2sAF%20Mall!5e0!3m2!1str!2saz!4v1679339282412!5m2!1str!2saz"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

@@ -1,0 +1,225 @@
+/* Header__location 42px 60px */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap');
+@import './components/icons.css';
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Francois One';
+    src: url('../fonts/FrancoisOne-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gillroy';
+    src: url('../fonts/Gilroy-ExtraBold.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: IcoFont;
+    font-weight: 400;
+    font-style: Regular;
+    src: url(../fonts/icofont.woff2) format("woff2"), url(../fonts/icofont.woff) format("woff")
+}
+
+:root {
+    --topmargin: 102px;
+    --fontcode: 'Barlow Semi Condensed', sans-serif;
+    --fontcode2: 'Gillroy';
+    --fontcode3: 'Space Mono';
+    --evo--color: #3E57E8;
+    --card-color1: #F72585;
+    --card-color2: #4CC9F0;
+    --card-color3: #4361EE;
+    --card-color4: #7209B7;
+    --card-color5: #D61355;
+    --card-color6: #F94A29;
+    --card-color7: #FCE22A;
+    --card-color8: #30E3DF;
+    --card-color9: #4D77FF;
+    --card-color10: #091353;
+    --card-color11: #9D84B7;
+    --card-color12: #B2F9FC;
+    --bg-color1: #F1F1F1;
+    --title-font: 4em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+    
+.scroll {
+    z-index: 4;
+    position: fixed;
+    opacity: 0;
+    top: 102px;
+    right: 5px;
+    border-radius: 30px;
+    width: 5px;
+    box-shadow: 0 0 60px 3px rgb(53, 50, 253);
+    background-color: var(--evo--color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 740px) {
+    .scroll {
+        display: none;
+    }
+}
+
+.circlecanvas {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.whatsapp {
+    background-color: #25d366;
+    z-index: 3;
+    line-height: 60px;
+    text-align: center;
+    bottom: 20px;
+    border-radius: 50%;
+    left: 20px;
+    position: fixed;
+    color: white;
+    height: 60px;
+    width: 63px;
+    transform: scale(1);
+    animation: pulse-black 2s infinite;
+}
+
+@keyframes pulse-black {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #25d366;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px #25d36500;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #25d36500;
+    }
+}
+
+.whatsapp>a>i {
+    color: white;
+    font-size: 2.9em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+[class*=" icofont-"],
+[class^=icofont-] {
+    font-family: IcoFont !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+
+.icofont-computer:before {
+    content: "\eeee"
+}
+
+.icofont-dashboard-web:before {
+    content: "\eef9"
+}
+
+.icofont-smart-phone:before {
+    content: "\efec"
+}
+
+.icofont-console:before {
+    content: "\eef0"
+}
+
+.icofont-game:before {
+    content: "\ea32"
+}
+
+.fa-caret-right::before {
+    content: "\f0da";
+}
+
+.d-block {
+    max-height: 600px !important;
+}
+
+.fa-caret-down::before {
+    content: "\f0d7";
+}
+
+.fa-xmark::before {
+    content: "\f00d";
+}
+
+.fa-circle-xmark::before {
+    content: "\f057";
+}
+
+.fa-chevron-left::before {
+    content: "\f053";
+}
+
+.fa-chevron-right::before {
+    content: "\f054";
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}

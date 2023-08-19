@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button i {
+    pointer-events: none;
+}
+
+a {
+    color: black;
+}
+
+[data-item] a {
+    text-decoration: none;
+    color: white;
+}
+
+.admin__menu {
+    z-index: 15;
+    min-height: 100vh;
+    height: 100%;
+    top: 0;
+    z-index: 9;
+    position: sticky;
+    transition: .3s ease max-width;
+}
+
+.admin__menu__item__top {
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin__menu__item__top:hover {
+    background-color: rgb(248, 249, 250);
+    color: rgb(33, 37, 41);
+}
+
+.admin__menu__item__bottom {
+    flex-direction: column;
+    display: flex;
+    transition: .3s ease max-height;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.admin__menu__item__bottom--open {
+    max-height: 400px;
+}
+
+.admin__menu__item__bottom__item {
+    margin: 0;
+    padding: 15px;
+}
+
+.admin__menu__item__bottom__item:hover {
+    background-color: rgb(248, 249, 250);
+    color: rgb(33, 37, 41);
+}
+
+.admin__menu__title {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.admin__menu__logo {
+    background-image: url('../images/logo.png');
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    /* background-color: rgb(33,37,41); */
+    /* background-blend-mode: multiply; */
+    border-radius: 50%;
+}
+
+.admin__menu__item {
+    padding: 15px;
+}
+
+.admin__menu__item__title__left {
+    gap: 5px;
+    pointer-events: none;
+    display: flex;
+}
+
+.admin__menu__item__title .bi-caret-down-fill {
+    transition: .3s ease transform;
+    pointer-events: none;
+    padding-top: 5px;
+    float: right;
+}
+
+.admin__menu__item {
+    cursor: pointer;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+
+.admin__content__title {
+    padding: 5px 1px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+
+.admin__content__title>* {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+[data-target="admin-menu"] {
+    display: none;
+}
+
+[data-target="admin-menu"]>* {
+    pointer-events: none;
+}
+
+.admin__menu--open {
+    position: fixed;
+    max-width: 500px !important;
+}
+
+@media only screen and (max-width: 790px) {
+    [data-target="admin-menu"] {
+        display: block;
+    }
+
+    .admin__menu {
+        position: fixed;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 0%;
+    }
+}
+
+.border-b {
+    border-bottom: 2px solid black;
+}
+
+.addform__education {
+    z-index: 9;
+    background-color: rgba(128, 128, 128, 0.5);
+    top: 0;
+    min-height: 100vh;
+    padding-top: 30px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.addform-education-input {
+    width: 100%;
+    max-width: 700px;
+}
+
+.addform__education__modal__row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.addform__education__modal {
+    min-height:500px;
+    overflow: auto;
+    gap: 10px;
+    border-radius: 4px;
+    width: 750px;
+    position: relative;
+}
+
+.max-700 {
+    width: 100%;
+    max-width: 700px;
+}
+
+.btn-for-input {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.addform__education__modal__btn--close {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.imageframe {
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    display: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.imageframe>.image {
+    background-color: white;
+    border: 5px solid white;
+    height: 80%;
+    position: relative;
+    width: 80%;
+}
+
+.imageframe>.image>button {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.imageframe>.image>img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.confirm__modal {
+    background-color: rgba(128, 128, 128, 0.5);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.confirm__moodal--open {
+    display: flex;
+}
+
+.addform__subcategory {
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+}

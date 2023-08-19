@@ -1,0 +1,148 @@
+@import './root.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/background.css';
+@import './components/form.css';
+
+.vacancy__section {
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacancy__form {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    box-shadow: 1px 2px 6px rgb(173 181 189 / 50%);
+    border-radius: 10px;
+}
+
+.vacancy__input {
+    width: 400px;
+}
+
+.file__input {
+    line-height: 45px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 10px;
+
+}
+
+.vacancy__select {
+    padding: 5px 10px;
+}
+
+/* #region List */
+.list__element__more {
+    transition: all .3s linear;
+    height: 0;
+}
+
+.list__element__more--open {
+    height: 300px;
+}
+
+.vacancy__list__element {
+    user-select: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid gray;
+    padding: 0 10px;
+    transition: .2s;
+    border-radius: 7px;
+}
+
+.vacancy__list__element * {
+    pointer-events: none;
+}
+
+.vacancy__list__element:hover {
+    border-color: black;
+}
+
+.list__element__title {
+    height: 45px;
+    line-height: 45px;
+    font-family: var(--fontcode);
+}
+
+.list__element__top {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vacancy__content {
+    width: 60%;
+}
+
+.vacancy__list {
+    width: 100%;
+}
+
+.list__element__icon>i {
+    pointer-events: none;
+}
+
+.vacancy__button {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.5em;
+    font-family: var(--fontcode);
+    z-index: 3;
+    background-color: transparent;
+    padding: 3px 0;
+    border-radius: 8px;
+    transition: .3s;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.vacancy__button:hover {
+    background-color: var(--evo--color);
+    border-color: white;
+    color: white;
+}
+
+.vacancy__title {
+    font-size: 4em;
+    text-align: center;
+    user-select: none;
+    font-family: var(--fontcode);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* #endregion */
+@media only screen and (max-width: 900px) {
+    .vacancy__section {
+        margin-top: 102px;
+    }
+
+    .form__row {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .vacancy__form,
+    .vacancy__input,
+    .form__row {
+        width: 100%;
+    }
+}
